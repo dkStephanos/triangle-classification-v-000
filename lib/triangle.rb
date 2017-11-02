@@ -11,7 +11,7 @@ class Triangle
 
   #Methods
   def kind
-    if (@first_side < 0 || @second_side < 0 || @third_side < 0) || (first_side + second_side < third_side || third_side + second_side < first_side || first_side + third_side < second_side)
+    if (@first_side < 0 || @second_side < 0 || @third_side < 0)
       begin
         raise TriangleError
       rescue TriangleError => error
