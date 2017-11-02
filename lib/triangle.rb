@@ -14,8 +14,6 @@ class Triangle
     if (@first_side < 0 || @second_side < 0 || @third_side < 0)
       begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
       end
     elsif first_side == second_side && second_side == third_side
       :equilateral
