@@ -17,7 +17,7 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    elsif first_side == second_side == third_side
+    elsif first_side == second_side && second_side == third_side
       :equilateral
     elsif first_side == second_side || second_side == third_side || first_side == third_side
       :isosceles
