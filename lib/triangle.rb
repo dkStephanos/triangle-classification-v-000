@@ -25,12 +25,11 @@ class Triangle
       :scalene
     end
   end
+end
 
-    #Custom Error Class
-    class TriangleError < StandardError
-    def message
-      "not a valid triangle"
-    end
+#Custom Error Class
+class TriangleError < StandardError
+  def message
+    "not a valid triangle"
   end
-
 end
